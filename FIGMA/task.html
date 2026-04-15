@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-FIGMA</title>        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet" href="figma.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-nav" data-bs-offset="0">
+    
+    <button class="btn btn-primary text-white m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">></button>
+    <div id="sidebarMenu" class="offcanvas offcanvas-start" tabindex="-1">
+
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="">DASHBOARD</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="">NOTIFICATIONS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="">TASK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="">HISTORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="">SETTINGS</a>
+                </li>
+                <button class="btn btn-outline-primary text-white" id="btn-toggle">MODE</button>
+                <li class="nav-item">
+                    <a class="nav-link text-white text-center" href="">LOGOUT</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body fixed-top">
+        
+        <div class="container">
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="">Help</a>
+                </li>
+
+                <form class="d-flex mx-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="search" aria-label="Search">
+                    <button class="btn btn-primary btn-sm" type="submit">
+                    <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </ul>
+        </div>
+
+        <div class="ms-auto d-flex align-items-center gap-3">
+            <span class="text-white ms-4">Hi, leonita!</span>
+            <div id="datetime" class="datetime"></div>
+            <button class="btn btn-primary btn-sm">SIGN IN</button>
+            <button class="btn btn-primary btn-sm">SIGN UP</button>
+            <i class="fas fa-bell"></i>
+        </div>
+        </div>
+    </nav>
+
+
+    <section class="container content-section">
+        <div class="dashboard-grid">
+
+            <div class="task-card">
+                <a class="nav-link text-black" href="deskripsi.html">
+                <h5 class="text-black">2/02/2026</h5></a>
+
+                <div class="nav-link task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS PKN (09.30)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS IPA (13.20)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS AGAMA (23.59)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="tambahkan">TAMBAHKAN...</div>
+            </div>
+
+            <div class="task-card">
+                <a class="nav-link text-black" href="deskripsi.html">
+                <h5 class="text-black">3/02/2026</h5></a>
+    
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS PJOK (07.30)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS IF (08.10)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="tambahkan">TAMBAHKAN...</div>
+            </div>
+    
+            <div class="task-card">
+                <a class="nav-link text-black" href="deskripsi.html">
+                <h5 class="text-black">4/02/2026</h5></a>
+    
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS JERMAN (10.40)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS IPA (13.50)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS EKONOMI (20.00)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="tambahkan">TAMBAHKAN...</div>
+            </div>
+
+            <div class="task-card">
+                <a class="nav-link text-black" href="deskripsi.html">
+                <h5 class="text-black">5/02/2026</h5></a>
+    
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS PKN (13.50)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS INGGRIS (14.30)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="tambahkan">TAMBAHKAN...</div>
+            </div>
+
+            <div class="task-card">
+                <a class="nav-link text-black" href="deskripsi.html">
+                <h5 class="text-black">6/02/2026</h5></a>
+            
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS BAHASA (07.30)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS IPA (10.40)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="tambahkan">TAMBAHKAN...</div>
+            </div>
+
+            <div class="task-card">
+                <a class="nav-link text-black" href="deskripsi.html">
+                <h5 class="text-black">7/02/2026</h5></a>
+            
+                <div class="task-item">
+                    <a class="nav-link text-black" href="deskripsi.html">
+                    <span>TUGAS MANDARIN (08.10)</span></a>
+                    <input type="checkbox">
+                </div>
+
+                <div class="tambahkan">TAMBAHKAN...</div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-main">
+        <div class="footer-links">
+            <div class="container d-flex justify-content-center gap-4 flex-wrap">
+                <a href="">LEGAL CENTER</a>
+                <a href="">PRIVACY POLICY</a>
+                <a href="">SECURITY</a>
+                <a href="">WEBSITE ACCESIBILITY</a>
+                <a href="">MANAGE COOKIES</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright 2026 | by evelyn</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      
+    <script>
+        const btn = document.getElementById('btn-toggle');
+        const htmlElement = document.documentElement;
+
+
+        btn.addEventListener('click', () => {const currentTheme = htmlElement.getAttribute('data-bs-theme'); const newTheme = currentTheme === 'light' ? 'dark' : 'light'; htmlElement.setAttribute('data-bs-theme', newTheme);});
+
+        
+        function updateDateTime() {const now = new Date(); const optionsDate = {weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }; const date = now.toLocaleDateString('id-ID', optionsDate); const time = now.toLocaleTimeString('id-ID'); document.getElementById('datetime').textContent = `${date} | ${time}`;}
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>

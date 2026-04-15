@@ -1,0 +1,192 @@
+body {
+    padding-top: 70px;
+}
+
+.offcanvas.offcanvas-start {
+    width: 265px; 
+    background-color: #123566;
+    font-style: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.offcanvas-body {
+    padding: 6rem 0.5rem;
+}
+
+.navbar {
+    font-size: 0.9rem;
+    padding: 18px;
+    background-color: #123566 !important;
+    color: white !important;
+}
+
+.datetime {
+    font-style: "Inter", sans-serif;
+    font-size: 16px; 
+}
+
+.content-section {
+    background-color: #F2F1DF;
+    padding: 50px;
+    height: 81.5vh;
+    margin-top: -50px;
+}
+
+.content-section .btn-primary {
+    background-color: #94C5A5;
+    border: none;
+    color: #1a3761;
+}
+
+.content-section .btn-primary:hover {
+    background-color: #8fae87;
+}
+
+.calendar-card td {
+    padding: 15px !important;
+    border: 1px solid #dee2e6 !important;
+
+}
+
+.task-list {
+    margin-top: 10px;
+}
+
+.get-started {
+    margin-bottom: 10px;
+}
+
+.month-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.task-item {
+    background-color: #94C5A5; 
+    color: #1a3761;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    transition: transform 0.2s;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item span:first-child {
+    margin-left: 1rem;
+}
+
+.task-item span:last-child {
+    margin-right: 1rem;
+}
+
+.task-add {
+    background-color: #94c5a58a;
+    border: 2px dashed #94C5A5;
+    color: rgba(26, 55, 97, 0.6);
+    margin-top: -40px;
+}
+
+.footer-main {
+    background-color: #1f3b64;
+    height: 55px;
+    padding-top: 20px;
+}
+
+.footer-main a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+
+.footer-main a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #94C5A5;
+    color: black;
+    font-style: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+
+
+
+
+/* task */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.task-card {
+    background-color: #94c5a5e1;
+    padding: 20px;
+    height: 280px;
+}
+
+.task-card h5 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.task-card .task-item {
+    background-color: #6CA680;
+    border-radius: 45px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tambahkan {
+    background-color: #6ca680ac;
+    border-radius: 45px;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* deskripsi */
+.task-title {
+    background-color: #94C5A5;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-deskripsi {
+    background-color: #94C5A5;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 16px;
+    height: 50vh;
+}
+
+.task-deskripsi ul {
+    padding-left: 20px;
+}
+
+.task-deskripsiketik {
+    color: rgba(26, 55, 97, 0.6);
+}
